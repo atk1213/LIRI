@@ -78,7 +78,6 @@ function getTweets() {
                     Created: tweets[i].created_at
                 }
                 console.log(results);
-                // var log = "my-tweets: " + JSON.stringify(result) + " ";
             }
         }
     });
@@ -139,9 +138,9 @@ function doWhatItSays() {
             return console.log("Error: " + error);
         }
         var dataContent = data.trim().split(",");
-        console.log(dataContent);
+        // console.log(dataContent);
         userEntry = dataContent[1].substr(1).slice(0, -1);
-        console.log(userEntry);
+        // console.log(userEntry);
         spotifySong(userEntry);
     });
 }
